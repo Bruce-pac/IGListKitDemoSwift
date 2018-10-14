@@ -25,11 +25,22 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Woy-If-irA">
+                        <rect key="frame" x="274" y="16.5" width="30" height="30"/>
+                        <state key="normal" title="✘">
+                            <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="onClickDelete:" destination="gTV-IL-0wX" eventType="touchUpInside" id="FMu-Qj-VTW"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="Woy-If-irA" secondAttribute="trailing" constant="20" id="Mgj-HU-koD"/>
                 <constraint firstItem="oWK-0U-Fuy" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="aox-He-s6N"/>
+                <constraint firstItem="Woy-If-irA" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="hCg-Jo-3df"/>
                 <constraint firstItem="oWK-0U-Fuy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="kme-6d-xGd"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>

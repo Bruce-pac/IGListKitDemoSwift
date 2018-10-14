@@ -19,7 +19,7 @@ class UserInfoCell: UICollectionViewCell {
         self.avatarView.layer.cornerRadius = 12
     }
     
-    @IBAction func onClickArrow(_ sender: Any) {
+    @IBAction private func onClickArrow(_ sender: Any) {
         onClickArrow?(self)
     }
     

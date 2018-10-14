@@ -36,14 +36,13 @@ class ImageSectionController: ListSectionController {
     }
 
     override func cellForItem(at index: Int) -> UICollectionViewCell {
-        guard let cell = collectionContext?.dequeueReusableCell(withNibName: "ImageCollectionCell", bundle: nil, for: self, at: index) as? ImageCollectionCell else { fatalError() }
+        guard let cell = collectionContext?.dequeueReusableCell(withNibName: ImageCollectionCell.cellIdentifier, bundle: nil, for: self, at: index) as? ImageCollectionCell else { fatalError() }
         cell.bindViewModel(viewModel)
         return cell
     }
 
     override func didUpdate(to object: Any) {
         self.object = object as? Feed
-        self.inset = UIEdgeInsets(top: padding, left: padding, bottom: 0, right: padding)
     }
 }
 

@@ -14,7 +14,7 @@ class ContentSectionController: ListSectionController {
     var expanded: Bool = false
 
     override func numberOfItems() -> Int {
-        if object.content?.isEmpty ?? false {
+        if object.content?.isEmpty ?? true {
             return 0
         }
         return 1
@@ -28,7 +28,7 @@ class ContentSectionController: ListSectionController {
     }
 
     override func cellForItem(at index: Int) -> UICollectionViewCell {
-        guard let cell = collectionContext?.dequeueReusableCell(withNibName: "ContentCell", bundle: nil, for: self, at: index) as? ContentCell else { fatalError() }
+        guard let cell = collectionContext?.dequeueReusableCell(withNibName: ContentCell.cellIdentifier, bundle: nil, for: self, at: index) as? ContentCell else { fatalError() }
         cell.bindViewModel(object.content as Any)
         return cell
     }

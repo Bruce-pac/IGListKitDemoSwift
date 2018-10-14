@@ -29,6 +29,10 @@
 		8411323C2168E57200096D3D /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411323B2168E57200096D3D /* Comment.swift */; };
 		8411323E2168F90200096D3D /* CommentSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411323D2168F90200096D3D /* CommentSectionController.swift */; };
 		84113240216903B900096D3D /* data5.json in Resources */ = {isa = PBXBuildFile; fileRef = 8411323F216903B900096D3D /* data5.json */; };
+		841132422169052500096D3D /* Ad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841132412169052500096D3D /* Ad.swift */; };
+		841132442169058A00096D3D /* AdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841132432169058A00096D3D /* AdCell.swift */; };
+		841132462169079900096D3D /* AdSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841132452169079900096D3D /* AdSectionController.swift */; };
+		841132482169085E00096D3D /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841132472169085E00096D3D /* ListModel.swift */; };
 		84681094215FBB8000433E5B /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84681092215FBB8000433E5B /* ContentCell.swift */; };
 		84681095215FBB8000433E5B /* ContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84681093215FBB8000433E5B /* ContentCell.xib */; };
 		84681097215FBD0500433E5B /* ContentSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84681096215FBD0500433E5B /* ContentSectionController.swift */; };
@@ -41,6 +45,8 @@
 		8481A7A0214AB134000D2FEE /* ForthListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481A79F214AB134000D2FEE /* ForthListViewController.swift */; };
 		8481A7A2214AB154000D2FEE /* FifthListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481A7A1214AB154000D2FEE /* FifthListViewController.swift */; };
 		84BDE421214AAEAE00532BF7 /* BaseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BDE420214AAEAE00532BF7 /* BaseListViewController.swift */; };
+		84C4E78A217243F1007EB895 /* SixthListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C4E789217243F1007EB895 /* SixthListViewController.swift */; };
+		84C4E78C2172445C007EB895 /* FeedSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C4E78B2172445C007EB895 /* FeedSectionController.swift */; };
 		84E1D888215A7735005AC6AC /* data1.json in Resources */ = {isa = PBXBuildFile; fileRef = 84E1D887215A7735005AC6AC /* data1.json */; };
 		84E1D88B215A7884005AC6AC /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E1D88A215A7884005AC6AC /* Feed.swift */; };
 		84E1D88D215A7B75005AC6AC /* JsonTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E1D88C215A7B75005AC6AC /* JsonTool.swift */; };
@@ -48,6 +54,9 @@
 		84E1D894215A817F005AC6AC /* UserInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E1D892215A817F005AC6AC /* UserInfoCell.swift */; };
 		84E1D895215A817F005AC6AC /* UserInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E1D893215A817F005AC6AC /* UserInfoCell.xib */; };
 		84E1D898215A8421005AC6AC /* UserInfoCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E1D897215A8421005AC6AC /* UserInfoCellModel.swift */; };
+		84FFB110216BA4920007D6FE /* AnyDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFB10D216BA4920007D6FE /* AnyDecodable.swift */; };
+		84FFB111216BA4920007D6FE /* AnyCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFB10E216BA4920007D6FE /* AnyCodable.swift */; };
+		84FFB112216BA4920007D6FE /* AnyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFB10F216BA4920007D6FE /* AnyEncodable.swift */; };
 		DC10661D0FC7E65BB04706E4 /* Pods_IGListKitDemoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8045177567850F9CE3E779F6 /* Pods_IGListKitDemoSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +87,10 @@
 		8411323B2168E57200096D3D /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		8411323D2168F90200096D3D /* CommentSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentSectionController.swift; sourceTree = "<group>"; };
 		8411323F216903B900096D3D /* data5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data5.json; sourceTree = "<group>"; };
+		841132412169052500096D3D /* Ad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ad.swift; sourceTree = "<group>"; };
+		841132432169058A00096D3D /* AdCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdCell.swift; sourceTree = "<group>"; };
+		841132452169079900096D3D /* AdSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdSectionController.swift; sourceTree = "<group>"; };
+		841132472169085E00096D3D /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
 		84681092215FBB8000433E5B /* ContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
 		84681093215FBB8000433E5B /* ContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentCell.xib; sourceTree = "<group>"; };
 		84681096215FBD0500433E5B /* ContentSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSectionController.swift; sourceTree = "<group>"; };
@@ -90,6 +103,8 @@
 		8481A79F214AB134000D2FEE /* ForthListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForthListViewController.swift; sourceTree = "<group>"; };
 		8481A7A1214AB154000D2FEE /* FifthListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthListViewController.swift; sourceTree = "<group>"; };
 		84BDE420214AAEAE00532BF7 /* BaseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseListViewController.swift; sourceTree = "<group>"; };
+		84C4E789217243F1007EB895 /* SixthListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixthListViewController.swift; sourceTree = "<group>"; };
+		84C4E78B2172445C007EB895 /* FeedSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedSectionController.swift; sourceTree = "<group>"; };
 		84E1D887215A7735005AC6AC /* data1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data1.json; sourceTree = "<group>"; };
 		84E1D88A215A7884005AC6AC /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		84E1D88C215A7B75005AC6AC /* JsonTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonTool.swift; sourceTree = "<group>"; };
@@ -97,6 +112,9 @@
 		84E1D892215A817F005AC6AC /* UserInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoCell.swift; sourceTree = "<group>"; };
 		84E1D893215A817F005AC6AC /* UserInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInfoCell.xib; sourceTree = "<group>"; };
 		84E1D897215A8421005AC6AC /* UserInfoCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoCellModel.swift; sourceTree = "<group>"; };
+		84FFB10D216BA4920007D6FE /* AnyDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyDecodable.swift; sourceTree = "<group>"; };
+		84FFB10E216BA4920007D6FE /* AnyCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyCodable.swift; sourceTree = "<group>"; };
+		84FFB10F216BA4920007D6FE /* AnyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyEncodable.swift; sourceTree = "<group>"; };
 		9DD1BC46992C3C01A94D603D /* Pods-IGListKitDemoSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGListKitDemoSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-IGListKitDemoSwift/Pods-IGListKitDemoSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,6 +158,7 @@
 				84E1D889215A773B005AC6AC /* Model */,
 				84E1D886215A7728005AC6AC /* data */,
 				84BDE422214AAEBA00532BF7 /* ViewController */,
+				84FFB10C216BA4920007D6FE /* AnyCodable */,
 				8400DEDA2112056D009D751C /* AppDelegate.swift */,
 				8400DEDC2112056D009D751C /* ViewController.swift */,
 				8400DEDE2112056D009D751C /* Main.storyboard */,
@@ -160,6 +179,7 @@
 				8481A79D214AB114000D2FEE /* ThirdListViewController.swift */,
 				8481A79F214AB134000D2FEE /* ForthListViewController.swift */,
 				8481A7A1214AB154000D2FEE /* FifthListViewController.swift */,
+				84C4E789217243F1007EB895 /* SixthListViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -181,6 +201,8 @@
 			children = (
 				84E1D88A215A7884005AC6AC /* Feed.swift */,
 				8411323B2168E57200096D3D /* Comment.swift */,
+				841132412169052500096D3D /* Ad.swift */,
+				841132472169085E00096D3D /* ListModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -193,6 +215,8 @@
 				841132212167914000096D3D /* FavorSectionController.swift */,
 				8411322D2168575900096D3D /* ImageSectionController.swift */,
 				8411323D2168F90200096D3D /* CommentSectionController.swift */,
+				841132452169079900096D3D /* AdSectionController.swift */,
+				84C4E78B2172445C007EB895 /* FeedSectionController.swift */,
 			);
 			path = SectionController;
 			sourceTree = "<group>";
@@ -212,6 +236,7 @@
 				84113228216852B600096D3D /* ImageCell.xib */,
 				841132352168E4EF00096D3D /* CommentCell.swift */,
 				841132362168E4EF00096D3D /* CommentCell.xib */,
+				841132432169058A00096D3D /* AdCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -225,6 +250,16 @@
 				841132392168E56500096D3D /* CommentCellModel.swift */,
 			);
 			path = CellModel;
+			sourceTree = "<group>";
+		};
+		84FFB10C216BA4920007D6FE /* AnyCodable */ = {
+			isa = PBXGroup;
+			children = (
+				84FFB10D216BA4920007D6FE /* AnyDecodable.swift */,
+				84FFB10E216BA4920007D6FE /* AnyCodable.swift */,
+				84FFB10F216BA4920007D6FE /* AnyEncodable.swift */,
+			);
+			path = AnyCodable;
 			sourceTree = "<group>";
 		};
 		B03E3B4751BC4C1EC904266E /* Pods */ = {
@@ -369,21 +404,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				841132252167B2B000096D3D /* ImageCollectionCell.swift in Sources */,
+				841132482169085E00096D3D /* ListModel.swift in Sources */,
 				8481A7A0214AB134000D2FEE /* ForthListViewController.swift in Sources */,
 				84681094215FBB8000433E5B /* ContentCell.swift in Sources */,
 				84E1D88B215A7884005AC6AC /* Feed.swift in Sources */,
 				8481A79C214AB106000D2FEE /* SecondListViewController.swift in Sources */,
 				84681097215FBD0500433E5B /* ContentSectionController.swift in Sources */,
 				8400DEDD2112056D009D751C /* ViewController.swift in Sources */,
+				84FFB110216BA4920007D6FE /* AnyDecodable.swift in Sources */,
 				841132222167914000096D3D /* FavorSectionController.swift in Sources */,
+				841132462169079900096D3D /* AdSectionController.swift in Sources */,
 				84E1D898215A8421005AC6AC /* UserInfoCellModel.swift in Sources */,
 				8411323E2168F90200096D3D /* CommentSectionController.swift in Sources */,
 				84113229216852B600096D3D /* ImageCell.swift in Sources */,
+				84C4E78A217243F1007EB895 /* SixthListViewController.swift in Sources */,
+				84C4E78C2172445C007EB895 /* FeedSectionController.swift in Sources */,
+				841132442169058A00096D3D /* AdCell.swift in Sources */,
 				8468109D215FD1AC00433E5B /* FavorCellModel.swift in Sources */,
 				84BDE421214AAEAE00532BF7 /* BaseListViewController.swift in Sources */,
 				8468109A215FD0C900433E5B /* FavorCell.swift in Sources */,
 				8411322E2168575900096D3D /* ImageSectionController.swift in Sources */,
 				8411322C216853A000096D3D /* Extensions.swift in Sources */,
+				841132422169052500096D3D /* Ad.swift in Sources */,
 				8481A7A2214AB154000D2FEE /* FifthListViewController.swift in Sources */,
 				8411323221688A5D00096D3D /* ImagesCollectionCellModel.swift in Sources */,
 				8400DEDB2112056D009D751C /* AppDelegate.swift in Sources */,
@@ -391,7 +433,9 @@
 				8481A79E214AB114000D2FEE /* ThirdListViewController.swift in Sources */,
 				84E1D894215A817F005AC6AC /* UserInfoCell.swift in Sources */,
 				8411323C2168E57200096D3D /* Comment.swift in Sources */,
+				84FFB112216BA4920007D6FE /* AnyEncodable.swift in Sources */,
 				8481A79A214AB0F3000D2FEE /* FirstListViewController.swift in Sources */,
+				84FFB111216BA4920007D6FE /* AnyCodable.swift in Sources */,
 				84E1D890215A80B5005AC6AC /* UserInfoSectionController.swift in Sources */,
 				84E1D88D215A7B75005AC6AC /* JsonTool.swift in Sources */,
 				841132372168E4EF00096D3D /* CommentCell.swift in Sources */,

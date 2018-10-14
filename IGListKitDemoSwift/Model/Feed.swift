@@ -31,3 +31,9 @@ extension Feed: ListDiffable {
         return feedId == object.feedId
     }
 }
+
+extension Feed: Equatable {
+    static func == (lhs: Feed, rhs: Feed) -> Bool {
+        return lhs.isEqual(toDiffableObject: rhs)
+    }
+}

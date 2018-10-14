@@ -20,7 +20,7 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="vdh-Dl-0DT">
-                        <rect key="frame" x="0.0" y="0.0" width="209" height="110"/>
+                        <rect key="frame" x="10" y="0.0" width="189" height="110"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YgE-5m-4wd">
                             <size key="itemSize" width="50" height="50"/>
@@ -35,10 +35,11 @@
                     </collectionView>
                 </subviews>
             </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="vdh-Dl-0DT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0C3-xE-7PW"/>
+                <constraint firstItem="vdh-Dl-0DT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="0C3-xE-7PW"/>
                 <constraint firstItem="vdh-Dl-0DT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Ewq-fY-5eu"/>
-                <constraint firstAttribute="trailing" secondItem="vdh-Dl-0DT" secondAttribute="trailing" id="QTu-aD-quZ"/>
+                <constraint firstAttribute="trailing" secondItem="vdh-Dl-0DT" secondAttribute="trailing" constant="10" id="QTu-aD-quZ"/>
                 <constraint firstAttribute="bottom" secondItem="vdh-Dl-0DT" secondAttribute="bottom" id="e9Z-0L-lDZ"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>

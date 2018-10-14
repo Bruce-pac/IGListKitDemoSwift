@@ -22,7 +22,7 @@ class CommentSectionController: ListSectionController {
     }()
 
     override func numberOfItems() -> Int {
-        return object.comments?.count ?? 0
+        return viewModels.count
     }
 
     override func sizeForItem(at index: Int) -> CGSize {
@@ -33,6 +33,16 @@ class CommentSectionController: ListSectionController {
     override func cellForItem(at index: Int) -> UICollectionViewCell {
         guard let cell = collectionContext?.dequeueReusableCell(withNibName: CommentCell.cellIdentifier, bundle: nil, for: self, at: index) as? CommentCell else { fatalError() }
         cell.bindViewModel(viewModels[index])
+        cell.onClickDelete = {[weak self] (deleteCell) in
+            guard let self = self else {
+                return
+            }
+            self.collectionContext?.performBatch(animated: true, updates: { (batch) in
+                let deleteIndex: Int! = self.collectionContext?.index(for: deleteCell, sectionController: self)
+                self.viewModels.remove(at: deleteIndex)
+                batch.delete(in: self, at: IndexSet(integer: deleteIndex))
+            }, completion: nil)
+        }
         return cell
     }
 

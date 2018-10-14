@@ -28,12 +28,28 @@ final class UserInfoSectionController: ListSectionController {
     }
 
     override func cellForItem(at index: Int) -> UICollectionViewCell {
-        guard let cell = collectionContext?.dequeueReusableCell(withNibName: "UserInfoCell", bundle: nil, for: self, at: index) as? UserInfoCell else { fatalError() }
+        guard let cell = collectionContext?.dequeueReusableCell(withNibName: UserInfoCell.cellIdentifier, bundle: nil, for: self, at: index) as? UserInfoCell else { fatalError() }
         cell.bindViewModel(viewModel as Any)
+        cell.onClickArrow = {[weak self] cell in
+            guard let self = self else { return }
+            let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+            actionSheet.addAction(UIAlertAction(title: "share", style: .default, handler: nil))
+            actionSheet.addAction(UIAlertAction(title: "cancel", style: .cancel, handler: nil))
+            actionSheet.addAction(UIAlertAction(title: "delete", style: .default, handler: { (action) in
+                NotificationCenter.default.post(name: Notification.Name.custom.delete, object: self.object)
+            }))
+            self.viewController?.present(actionSheet, animated: true, completion: nil)
+        }
         return cell
     }
 
     override func didUpdate(to object: Any) {
         self.object = object as? Feed
+    }
+}
+
+extension Notification.Name {
+    struct custom {
+        static let delete = Notification.Name("delete")
     }
 }

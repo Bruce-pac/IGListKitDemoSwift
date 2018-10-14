@@ -26,7 +26,7 @@ class FavorSectionController: ListSectionController {
         return CGSize(width: width, height: 65)
     }
     override func cellForItem(at index: Int) -> UICollectionViewCell {
-        guard let cell = collectionContext?.dequeueReusableCell(withNibName: "FavorCell", bundle: nil, for: self, at: index) as? FavorCell else { fatalError() }
+        guard let cell = collectionContext?.dequeueReusableCell(withNibName: FavorCell.cellIdentifier, bundle: nil, for: self, at: index) as? FavorCell else { fatalError() }
         cell.bindViewModel(viewModel as Any)
         cell.favorOperation = {[weak self] cell in
             guard let self = self else { return }

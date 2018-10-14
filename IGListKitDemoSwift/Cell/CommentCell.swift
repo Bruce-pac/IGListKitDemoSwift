@@ -11,10 +11,14 @@ import IGListKit
 
 class CommentCell: UICollectionViewCell {
     @IBOutlet weak var textLabel: UILabel!
+    public var onClickDelete: ((CommentCell) -> Void)?
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    @IBAction private func onClickDelete(_ sender: Any) {
+        onClickDelete?(self)
     }
 }
 
