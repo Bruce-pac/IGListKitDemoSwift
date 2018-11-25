@@ -34,6 +34,8 @@ class ViewController: UITableViewController {
             self.navigationController?.pushViewController(FifthListViewController(), animated: true)
         case 5:
             self.navigationController?.pushViewController(SixthListViewController(), animated: true)
+        case 6:
+            self.navigationController?.pushViewController(SeventhListViewController(), animated: true)
         default:
             fatalError()
         }

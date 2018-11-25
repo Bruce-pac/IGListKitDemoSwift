@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import IGListKit
 
-class CommentCellModel {
+class CommentCellModel: NSObject {
     private(set) var commentStr: NSAttributedString!
 
     var comment: Comment! {
@@ -19,5 +20,18 @@ class CommentCellModel {
             attr.addAttributes([NSAttributedString.Key.foregroundColor: UIColor.green], range: nsrange)
             commentStr = attr
         }
+    }
+}
+
+extension CommentCellModel: ListDiffable {
+    func diffIdentifier() -> NSObjectProtocol {
+        return self
+    }
+    func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
+        if self === object {
+            return true
+        }
+        guard let obj = object as? CommentCellModel else { return false }
+        return self.commentStr == obj.commentStr
     }
 }

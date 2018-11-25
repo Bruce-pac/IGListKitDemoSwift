@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import IGListKit
 
-class ImagesCollectionCellModel {
+class ImagesCollectionCellModel: NSObject {
     private(set) var images: [UIImage] = []
     var imageNames: [String] = [] {
         didSet {
@@ -30,5 +31,18 @@ class ImagesCollectionCellModel {
             }
             images = a
         }
+    }
+}
+
+extension ImagesCollectionCellModel: ListDiffable {
+    func diffIdentifier() -> NSObjectProtocol {
+        return self
+    }
+    func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
+        if self === object {
+            return true
+        }
+        guard let obj = object as? ImagesCollectionCellModel else { return false }
+        return self.imageNames == obj.imageNames
     }
 }

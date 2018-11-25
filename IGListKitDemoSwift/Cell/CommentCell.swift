@@ -11,6 +11,10 @@ import IGListKit
 
 class CommentCell: UICollectionViewCell {
     @IBOutlet weak var textLabel: UILabel!
+
+    var viewModel: CommentCellModel?
+
+
     public var onClickDelete: ((CommentCell) -> Void)?
 
     override func awakeFromNib() {
@@ -25,6 +29,7 @@ class CommentCell: UICollectionViewCell {
 extension CommentCell: ListBindable {
     func bindViewModel(_ viewModel: Any) {
         guard let viewModel = viewModel as? CommentCellModel else { return }
+        self.viewModel = viewModel
         textLabel.attributedText = viewModel.commentStr
     }
 }

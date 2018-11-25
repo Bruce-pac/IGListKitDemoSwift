@@ -54,6 +54,8 @@
 		84E1D894215A817F005AC6AC /* UserInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E1D892215A817F005AC6AC /* UserInfoCell.swift */; };
 		84E1D895215A817F005AC6AC /* UserInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E1D893215A817F005AC6AC /* UserInfoCell.xib */; };
 		84E1D898215A8421005AC6AC /* UserInfoCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E1D897215A8421005AC6AC /* UserInfoCellModel.swift */; };
+		84EAB95121AA72C6001AB01A /* FeedBindingSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAB95021AA72C6001AB01A /* FeedBindingSectionController.swift */; };
+		84EAB95321AA7AE0001AB01A /* SeventhListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAB95221AA7AE0001AB01A /* SeventhListViewController.swift */; };
 		84FFB110216BA4920007D6FE /* AnyDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFB10D216BA4920007D6FE /* AnyDecodable.swift */; };
 		84FFB111216BA4920007D6FE /* AnyCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFB10E216BA4920007D6FE /* AnyCodable.swift */; };
 		84FFB112216BA4920007D6FE /* AnyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFB10F216BA4920007D6FE /* AnyEncodable.swift */; };
@@ -112,6 +114,8 @@
 		84E1D892215A817F005AC6AC /* UserInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoCell.swift; sourceTree = "<group>"; };
 		84E1D893215A817F005AC6AC /* UserInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInfoCell.xib; sourceTree = "<group>"; };
 		84E1D897215A8421005AC6AC /* UserInfoCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoCellModel.swift; sourceTree = "<group>"; };
+		84EAB95021AA72C6001AB01A /* FeedBindingSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBindingSectionController.swift; sourceTree = "<group>"; };
+		84EAB95221AA7AE0001AB01A /* SeventhListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeventhListViewController.swift; sourceTree = "<group>"; };
 		84FFB10D216BA4920007D6FE /* AnyDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyDecodable.swift; sourceTree = "<group>"; };
 		84FFB10E216BA4920007D6FE /* AnyCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyCodable.swift; sourceTree = "<group>"; };
 		84FFB10F216BA4920007D6FE /* AnyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyEncodable.swift; sourceTree = "<group>"; };
@@ -180,6 +184,7 @@
 				8481A79F214AB134000D2FEE /* ForthListViewController.swift */,
 				8481A7A1214AB154000D2FEE /* FifthListViewController.swift */,
 				84C4E789217243F1007EB895 /* SixthListViewController.swift */,
+				84EAB95221AA7AE0001AB01A /* SeventhListViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -217,6 +222,7 @@
 				8411323D2168F90200096D3D /* CommentSectionController.swift */,
 				841132452169079900096D3D /* AdSectionController.swift */,
 				84C4E78B2172445C007EB895 /* FeedSectionController.swift */,
+				84EAB95021AA72C6001AB01A /* FeedBindingSectionController.swift */,
 			);
 			path = SectionController;
 			sourceTree = "<group>";
@@ -407,11 +413,13 @@
 				841132482169085E00096D3D /* ListModel.swift in Sources */,
 				8481A7A0214AB134000D2FEE /* ForthListViewController.swift in Sources */,
 				84681094215FBB8000433E5B /* ContentCell.swift in Sources */,
+				84EAB95121AA72C6001AB01A /* FeedBindingSectionController.swift in Sources */,
 				84E1D88B215A7884005AC6AC /* Feed.swift in Sources */,
 				8481A79C214AB106000D2FEE /* SecondListViewController.swift in Sources */,
 				84681097215FBD0500433E5B /* ContentSectionController.swift in Sources */,
 				8400DEDD2112056D009D751C /* ViewController.swift in Sources */,
 				84FFB110216BA4920007D6FE /* AnyDecodable.swift in Sources */,
+				84EAB95321AA7AE0001AB01A /* SeventhListViewController.swift in Sources */,
 				841132222167914000096D3D /* FavorSectionController.swift in Sources */,
 				841132462169079900096D3D /* AdSectionController.swift in Sources */,
 				84E1D898215A8421005AC6AC /* UserInfoCellModel.swift in Sources */,

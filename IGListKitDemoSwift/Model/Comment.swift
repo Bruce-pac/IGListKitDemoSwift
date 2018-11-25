@@ -11,6 +11,10 @@ import Foundation
 class Comment: Codable {
     var comment: String = ""
     var person: String = ""
+}
 
-
+extension Comment: Equatable {
+    static func == (lhs: Comment, rhs: Comment) -> Bool {
+        return (lhs.comment == rhs.comment) && (lhs.person == rhs.person)
+    }
 }

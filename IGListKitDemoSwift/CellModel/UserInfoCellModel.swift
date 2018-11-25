@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import IGListKit
 
 class UserInfoCellModel {
     var avatar: URL?
@@ -14,5 +15,18 @@ class UserInfoCellModel {
     init(avatar: URL?, userName: String) {
         self.avatar = avatar
         self.userName = userName
+    }
+}
+
+extension UserInfoCellModel: ListDiffable {
+    func diffIdentifier() -> NSObjectProtocol {
+        return userName as NSObjectProtocol
+    }
+    func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
+        if self === object {
+            return true
+        }
+        guard let obj = object as? UserInfoCellModel else { return false }
+        return self.userName == obj.userName
     }
 }
